@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Nunito+Sans:wght@400;600;900&display=swap');
+
+.imglogo{
+    width: 150px;
+    height: 150px;
+    display:block;
+    margin:auto;
+}
+
+.logo{
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.inicio{
+    width: 132px;
+    height: 41px;
+    background: #FFDE59;
+    border-radius: 10px;
+    border-color: #FFDE59;
+    font-family: Alatsi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #3A3030;
+    margin-right: 40px;
+
+}
+
+.sub{
+    position: absolute;
+    width: 525px;
+    height: 235px;
+    left: 98px;
+    top: 150px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 95px;
+    color: #FFD632;
+
+}
+
+.desc{
+    position: absolute;
+    width: 446px;
+    height: 61px;
+    left: 101px;
+    top: 370px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3030;
+}
+
+.recibo{
+    position: absolute;
+    width: 595px;
+    height:540px;
+    left: 700px;
+    top: 106px;
+}
+
+.bempezar{
+    position: absolute;
+    width: 221px;
+    height: 52px;
+    left: 172px;
+    top: 477px;
+    background: #F0F0F0;
+    border-radius: 50px;
+    border-color: #F0F0F0;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+
+}
+
+.rectangulo{
+    position: absolute;
+    width: 458px;
+    height: 44px;
+    left: 322px;
+    top: 155px;
+
+    background: rgba(240, 240, 240, 0.6);
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 10px;
+}
+
+.subtitulo{
+    position: absolute;
+    width: 91px;
+    height: 32px;
+    left: 350px;
+    top: 160px;
+
+    font-family: Alatsi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 32px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
