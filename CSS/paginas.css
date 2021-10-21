@@ -74,10 +74,10 @@
 
 .recibo{
     position: absolute;
-    width: 640px;
-    height:360px;
-    left: 700px;
-    top: 106px;
+    width: 400px;
+    height:400px;
+    left: 750px;
+    top: 150px;
 }
 
 .bempezar{
@@ -106,19 +106,10 @@
     top: 155px;
     background: rgba(240, 240, 240, 0.6);
     backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
     border-radius: 10px;
 }
 
 .subtitulo{
-    position: absolute;
-    width: 91px;
-    height: 32px;
-    left: 350px;
-    top: 160px;
-    font-family: Alatsi;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 32px;
-    color: #000000;
+
 }
