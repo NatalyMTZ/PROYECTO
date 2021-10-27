@@ -12,6 +12,26 @@
     line-height: 80px;
 }
 
+.show_binicar{
+    height: 30px;
+    left: 942px;
+    top: 39px;
+    font-family: Altasi;
+    margin-right: 40px;
+    font-style: normal;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #3A3030;
+    line-height: 523px;
+    background: rgba(240, 240, 240, 0.6);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
 .inicio{
     width: 132px;
     height: 30px;
