@@ -5,13 +5,11 @@
     box-sizing: border-box;
 }
 
-html,body{
+section{
     display: grid;
     height: 100%;
     width: 100%;
     place-items: center;
-    background: #f2f2f2;
-    background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 
 ::selection{
@@ -39,7 +37,7 @@ html,body{
 }
 
 .wrapper form{
-    padding: 10px 30px 50px 30px;
+    padding: 10px 30px 30px 30px;
 }
 
 .wrapper form .field{
@@ -159,6 +157,12 @@ form .signup-link a:hover{
     font-size: 12px;
 }
 
-.i{
+.regreso{
+    margin: 25px;
+    font-size: 30px;
     color: black;
+}
+
+.at{
+    font-size: 12px;
 }
