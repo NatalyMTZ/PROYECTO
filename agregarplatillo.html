@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="IMG/isotipo.png"> 
     <link rel="stylesheet" href="CSS/paginas.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
-    <title>Órdenes - OrderEat</title>
+    <title>Agregar Platillo - OrderEat</title>
 </head>
 <body>
     <div class="sidebar">
@@ -64,52 +64,7 @@
         </div>
     </div>
     <div class="home_content">
-        <br><br><br>
-        <table class="table_content" cellspacing="0" >
-            <tr>    
-                <td>
-                
-                    <div class="text_open">
-                        
-                       <p class="text_in">Órdenes</p> 
-
-                    <td class="content_cent">
-                        
-                        <button class="button_plus" id="">
-                            <a href="agregarorden.html"><i class='plus bx bx-plus' ></i> </a> 
-                        </button>
-                    </td>
-
-                    </div>
-                    
-                </td>
-
-                <td>
-                    <button class="button_sync" id="open_modal">
-                        <i class='sync bx bx-sync'></i>
-                    </button>
-                    
-                
-                </td>
-
-            </tr>
-
-
-        </table>
-
-        <br><br><br><br><br>
-        <p class="text_ord">NO HAY ÓRDENES PENDIENTES</p>
+        <a href="platillos.html"><i class='regreso bx bx-left-arrow-alt'><p class="at">Regresar</p></i></a> 
     </div>
-
-    <script>
-        let btn = document.querySelector("#btn");
-        let sidebar = document.querySelector(".sidebar");
-        
-        btn.onclick = function(){
-            sidebar.classList.toggle("active");
-        }
-    </script>
-
-    
 </body>
 </html>
