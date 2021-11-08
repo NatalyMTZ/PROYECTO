@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
     <link rel="shortcut icon" href="IMG/isotipo.png"> 
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/paginas.css">
+    <link rel="stylesheet" href="CSS/reportes.css">
     <title>OrderEat</title>
 </head>
 <body>
@@ -54,17 +56,92 @@
             <li>
                 <a href="config.html">
                     <i class='bx bx-category'></i>
-                    <span class="links_name">Configuración</span>
+                    <span class="links_name">Reporte</span>
                 </a>
                 
             </li>
         </ul>
         <div class="profile_content">
-            <i class='bx bx-log-out' id="log_out"></i>
+            <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
         </div>
     </div>
     <div class="home_content">
-        <div class="text">Reportes</div>
+        <br><br><br>
+        <table class="table_content" cellspacing="0" >
+            <tr>    
+                <td>
+                
+                    <div class="text_open">
+                        
+                       <p class="text_in">Reporte</p> 
+
+                    <td class="content_cent">
+                        
+                        <button class="button_plus" id="">
+                            
+                        </button>
+                    </td>
+
+                    </div>
+                    
+                </td>
+
+                <td>
+                    <button class="button_sync" id="open_modal">
+                        <i class='sync bx bx-sync'></i>
+                    </button>
+                    
+                
+                </td>
+
+            </tr>
+
+        </table>
+
+        <section class="card">
+            <div class="card__container bd-container">
+                <div class="card__glass">
+                    <br><br>
+                    <i class='ico bx bx-dollar'></i>
+                    <br><br><br>
+    
+                    <div class="card__data">
+                        <h3 class="card__title">Balance</h3>
+                        <span class="card__profession">Hoy</span>
+                    </div>
+
+                    <span class="respuesta">$0</span>
+                </div>
+    
+                <div class="card__glass">
+                    <br><br>
+                    <i class='ico bx bx-dish'></i>
+                    <br><br><br>
+    
+                    <div class="card__data">
+                        <h3 class="card__title">Platillo más vendido</h3>
+                        <span class="card__profession">Hoy</span>
+                    </div>
+
+                    <span class="respuesta">Platillo #0001</span>
+                </div>
+    
+                <div class="card__glass">
+                    <br><br>
+                    <i class='ico bx bx-heart'></i>
+                    <br><br><br>
+    
+                    <div class="card__data">
+                        <h3 class="card__title">Cliente más frecuente</h3>
+                        <span class="card__profession">Hoy</span>
+                    </div>
+
+                    <span class="respuesta">Cliente #0001</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
     </div>
 
     <script>

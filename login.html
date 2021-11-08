@@ -17,69 +17,44 @@
 </head>
 <body>
     
-    <div class="login">
-        <div class="login__content">
-            <div class="login__img">
-                <a href="index.html"><i class='regreso bx bx-left-arrow-alt'><p class="at">Atrás</p></i></a> 
-                <img src="IMG/Mobile login-pana.png" alt="">
-            </div>
+    <div class="l-form">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
 
-            <div class="login__forms">
-                <form action="" class="login__registre" id="login-in">
-                    <h1 class="login__title">Iniciar Sesión</h1>
+        <div class="form">
+            <img src="IMG/Mobile login-pana.png" alt="" class="form__img"> 
+            <form action="" class="form__content">
+                <a href="index.html"><i class='regreso bx bx-left-arrow-alt'></i></a>
+                <h1 class="form__title">Iniciar Sesión</h1>
 
-                    <div class="login__box">
-                        <i class='bx bx-user login__icon'></i>
-                        <input type="text" placeholder="Nombre de Usuario" class="login__input">
+                <div class="form__div form__div-one">
+                    <div class="form__icon">
+                        <i class='bx bx-user-circle'></i>
                     </div>
 
-                    <div class="login__box">
-                        <i class='bx bx-lock-alt login__icon'></i>
-                        <input type="password" placeholder="Contraseña" class="login__input">
+                    <div class="form__div-input">
+                        <label for="" class="form__label">Nombre de Usuario</label>
+                        <input type="text" class="form__input">
+                    </div>
+                </div>
+
+                <div class="form__div">
+                    <div class="form__icon">
+                        <i class='bx bx-lock' ></i>
                     </div>
 
-
-                    <a href="ordenes.html" class="login__button">Entrar</a>
-
-                    <div>
-                        <span class="login__account">¿No tienes cuenta?</span>
-                        <span class="login__signin" id="sign-up">Regístrate</span>
+                    <div class="form__div-input">
+                        <label for="" class="form__label">Contraseña</label>
+                        <input type="password" class="form__input">
                     </div>
-                </form>
-
-                <form action="" class="login__create none" id="login-up">
-                    <h1 class="login__title">Crear Cuenta</h1>
-
-                    <div class="login__box">
-                        <i class='bx bx-user login__icon'></i>
-                        <input type="text" placeholder="Nombre de Usuario" class="login__input">
-                    </div>
-
-                    <div class="login__box">
-                        <i class='bx bx-lock-alt login__icon'></i>
-                        <input type="password" placeholder="Contraseña" class="login__input">
-                    </div>
-
-                    <div class="login__box">
-                        <i class='bx bx-at login__icon'></i>
-                        <input type="text" placeholder="Nombre de Negocio" class="login__input">
-                    </div>
-
-                    <div class="login__box">
-                        <i class='bx bx-lock-alt login__icon'></i>
-                        <input type="password" placeholder="Clave Única del Dueño" class="login__input">
-                    </div>
-
-                    <a href="ordenes.html" class="login__button">Registarse</a>
-
-                    <div>
-                        <span class="login__account">¿Ya tienes cuenta?</span>
-                        <span class="login__signup" id="sign-in">Iniciar Sesión</span>
-                    </div>
-
-                </form>
-            </div>
+                </div>
+                <br>
+                <br>
+                <a href="ordenes.html" class="form__button">Entrar</a> 
+                <a href="registrar.html" class="form__reg">Crear cuenta</a>
+            </form>
         </div>
+
     </div>
 
     <!--===== MAIN JS =====-->
