@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="IMG/isotipo.png"> 
-    <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/paginas.css">
-    <link rel="stylesheet" href="CSS/ccliente.css">
+    <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/agregarp.css">
-    <link rel="stylesheet" href="CSS/tablahistorial.css">
-    <title>OrderEat</title>
+    <title>Cliente - OrderEat</title>
 </head>
 <body>
     <div class="sidebar">
@@ -61,65 +60,32 @@
         </div>
     </div>
     <div class="home_content">
-        <br><br><br>
+        <a href="reportes.html"><i class='regreso bx bx-left-arrow-alt'><p class="at">Regresar</p></i></a> 
+        
         <div class="container">
-            <div class="title">Historial Clientes</div>
+            <div class="title">Agregar Pago</div>
             <div class="content">
               <form action="#">
                 <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Seleccionar Cliente</span>
-                        <select class="select"></select>
-                    </div>
-                    <div>
-                        <center>
-                            <table class="content-table">
-                            <thead>
-                              <tr>
-                                <th>Cliente</th>
-                                <th>Dirección</th>
-                                <th>Cantidad</th>
-                                <th>Platillo</th>
-                                <th>Comentarios</th>
-                                <th>Total</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Domenic</td>
-                                <td>Catarino Benavides 150, Ampliación San Pedro Xalpa, Azcapotzalco, CDMX</td>
-                                <td>1</td>
-                                <td>Hamburguesa</td>
-                                <td>Sin catsup</td>
-                                <td>$60</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-
-                    <div class="button">
-                        <input type="submit" value="Buscar">
-                      </div>
+                  <div class="input-box">
+                    <span class="details">Nombre</span>
+                    <input type="text" placeholder="" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Comentario</span>
+                    <input type="text" placeholder="" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Precio</span>
+                    <input type="number" placeholder="" required>
+                  </div>
+                <div class="button">
+                  <input type="submit" value="Agregar">
+                </div>
               </form>
             </div>
         </div>
 
     </div>
-
-
-    <!--===== SORTABLE JS =====-->
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-
-     <!--===== MAIN JS =====-->
-    <script src="JS/cardcliente.js"></script>
-
-    <script>
-        let btn = document.querySelector("#btn");
-        let sidebar = document.querySelector(".sidebar");
-        
-        btn.onclick = function(){
-            sidebar.classList.toggle("active");
-        }
-    </script>
 </body>
 </html>

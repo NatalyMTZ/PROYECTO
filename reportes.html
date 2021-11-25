@@ -86,77 +86,99 @@
 
         </table>
 
-        <section class="card">
-            <div class="card__container bd-container">
-                <div class="card__glass">
-                    <br><br>
-                    <i class='ico bx bx-dish'></i>
-                    <br><br><br>
-    
-                    <div class="card__data">
-                        <h3 class="card__title">Órdenes Entregadas</h3>
-                        <span class="card__profession">Hoy</span>
+        <div class="drop">
+            <br>
+            <div class="drop__container" id="drop-items">
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <i class='bx bx-dollar' undefined ></i>
+                        <div>
+                            <h1 class="drop__name">Balance</h1>
+                            <span class="drop__profession">Del día de Hoy</span>
+                        </div>
                     </div>
 
-                    <span class="respuesta">0</span>
+                    <div>
+                        <span class="drop__total">$300</span>
+                    </div>
                 </div>
 
-                <div class="card__glass">
-                    <br><br>
-                    <i class='ico bx bx-dollar'></i>
-                    <br><br><br>
-    
-                    <div class="card__data">
-                        <h3 class="card__title">Balance</h3>
-                        <span class="card__profession">Hoy</span>
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <i class='bx bx-restaurant' ></i>
+                        <div>
+                            <h1 class="drop__name">Platillo más vendido</h1>
+                            <span class="drop__profession">Desde siempre</span>
+                        </div>
                     </div>
 
-                    <span class="respuesta">$0</span>
-                </div>
-    
-                <div class="card__glass">
-                    <br><br>
-                    <i class='bx bx-restaurant'></i>
-                    <br><br><br>
-    
-                    <div class="card__data">
-                        <h3 class="card__title">Platillo más vendido</h3>
-                        <span class="card__profession">Hoy</span>
+                    <div>
+                        <span class="drop__total">Hamburguesa</span>
                     </div>
-
-                    <span class="respuesta">Platillo #0001</span>
                 </div>
+                
             </div>
-        </section>
-
-        <div>
-            <br><br>
+        </div>
+        <div><br>
             <center><h2 class="titulito">Pagos</h2></center>
+            <br>
+            <center><a href="agregarpago.html" class="linka">Agregar Pago</a></center>
             <div>
                 <center>
                     <table class="content-table">
                     <thead>
-                      <tr>
+                    <tr>
                         <th><i class='bx bx-check-square'></i></th>
                         <th>Pago</th>
                         <th>Comentario</th>
                         <th>Precio</th>
                         <th><i class='bx bx-edit'><input type="button"></i></th>
                         <th><i class='bx bxs-tag-x'></i></th>
-                      </tr>
+                    </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                    <tr>
                         <td><input type="radio"></td>
                         <td>Luz</td>
                         <td>Del mes de Noviembre</td>
                         <td>1000</td>
-                      </tr>
+                    </tr>
                     </tbody>
-                  </table>
+                </table>
                 </center>
             </div>
         </div>
+
+        <div><br>
+            <center><h2 class="titulito">Ordenes Entregadas</h2></center>
+            <br>
+            <div>
+                <center>
+                    <table class="content-table">
+                    <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Dirección</th>
+                        <th>Cantidad</th>
+                        <th>Platillo</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Mario</td>
+                        <td>Catarino Benavides 150, Ampliación San Pedro Xalpa, Azcapotzalco, CDMX</td>
+                        <td>1</td>
+                        <td>Pollo</td>
+                        <td>$100</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </center>
+            </div>
+        </div>
+
+        
 
     </div>
     </div>
