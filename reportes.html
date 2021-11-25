@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/paginas.css">
     <link rel="stylesheet" href="CSS/reportes.css">
+    <link rel="stylesheet" href="CSS/tablas.css">
     <title>OrderEat</title>
 </head>
 <body>
@@ -34,31 +35,26 @@
                 
             </li>
             <li>
-                <a href="clientes.html">
-                    <i class='bx bx-user-check'></i>
-                    <span class="links_name">Clientes</span>
-                </a>
-                
-            </li>
-            <li>
                 <a href="platillos.html">
                     <i class='bx bx-restaurant'></i>
                     <span class="links_name">Platillos</span>
                 </a>
                 
             </li>
+
+            <li>
+                <a href="historial.html">
+                    <i class='bx bx-pie-chart-alt'></i>
+                    <span class="links_name">Historial</span>
+                </a>
+                
+            </li>
+
             <li>
                 <a href="reportes.html">
                     <i class='bx bx-receipt'></i>
                     <span class="links_name">Reporte</span>
                 </a>
-                
-            <li>
-                <a href="config.html">
-                    <i class='bx bx-category'></i>
-                    <span class="links_name">Reporte</span>
-                </a>
-                
             </li>
         </ul>
         <div class="profile_content">
@@ -86,20 +82,25 @@
                     
                 </td>
 
-                <td>
-                    <button class="button_sync" id="open_modal">
-                        <i class='sync bx bx-sync'></i>
-                    </button>
-                    
-                
-                </td>
-
             </tr>
 
         </table>
 
         <section class="card">
             <div class="card__container bd-container">
+                <div class="card__glass">
+                    <br><br>
+                    <i class='ico bx bx-dish'></i>
+                    <br><br><br>
+    
+                    <div class="card__data">
+                        <h3 class="card__title">Órdenes Entregadas</h3>
+                        <span class="card__profession">Hoy</span>
+                    </div>
+
+                    <span class="respuesta">0</span>
+                </div>
+
                 <div class="card__glass">
                     <br><br>
                     <i class='ico bx bx-dollar'></i>
@@ -115,7 +116,7 @@
     
                 <div class="card__glass">
                     <br><br>
-                    <i class='ico bx bx-dish'></i>
+                    <i class='bx bx-restaurant'></i>
                     <br><br><br>
     
                     <div class="card__data">
@@ -125,21 +126,37 @@
 
                     <span class="respuesta">Platillo #0001</span>
                 </div>
-    
-                <div class="card__glass">
-                    <br><br>
-                    <i class='ico bx bx-heart'></i>
-                    <br><br><br>
-    
-                    <div class="card__data">
-                        <h3 class="card__title">Cliente más frecuente</h3>
-                        <span class="card__profession">Hoy</span>
-                    </div>
-
-                    <span class="respuesta">Cliente #0001</span>
-                </div>
             </div>
         </section>
+
+        <div>
+            <br><br>
+            <center><h2 class="titulito">Pagos</h2></center>
+            <div>
+                <center>
+                    <table class="content-table">
+                    <thead>
+                      <tr>
+                        <th><i class='bx bx-check-square'></i></th>
+                        <th>Pago</th>
+                        <th>Comentario</th>
+                        <th>Precio</th>
+                        <th><i class='bx bx-edit'><input type="button"></i></th>
+                        <th><i class='bx bxs-tag-x'></i></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="radio"></td>
+                        <td>Luz</td>
+                        <td>Del mes de Noviembre</td>
+                        <td>1000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </center>
+            </div>
+        </div>
 
     </div>
     </div>

@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="IMG/isotipo.png"> 
-    <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/paginas.css">
-    <title>OrderEat</title>
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="stylesheet" href="CSS/agregarp.css">
+    <title>Cliente - OrderEat</title>
 </head>
 <body>
     <div class="sidebar">
@@ -33,31 +33,26 @@
                 
             </li>
             <li>
-                <a href="clientes.html">
-                    <i class='bx bx-user-check'></i>
-                    <span class="links_name">Clientes</span>
-                </a>
-                
-            </li>
-            <li>
                 <a href="platillos.html">
                     <i class='bx bx-restaurant'></i>
                     <span class="links_name">Platillos</span>
                 </a>
                 
             </li>
+
+            <li>
+                <a href="historial.html">
+                    <i class='bx bx-pie-chart-alt'></i>
+                    <span class="links_name">Historial</span>
+                </a>
+                
+            </li>
+
             <li>
                 <a href="reportes.html">
                     <i class='bx bx-receipt'></i>
                     <span class="links_name">Reporte</span>
                 </a>
-                
-            <li>
-                <a href="config.html">
-                    <i class='bx bx-category'></i>
-                    <span class="links_name">Configuración</span>
-                </a>
-                
             </li>
         </ul>
         <div class="profile_content">
@@ -65,47 +60,26 @@
         </div>
     </div>
     <div class="home_content">
-        <br><br><br>
-        <table class="table_content" cellspacing="0" >
-            <tr>    
-                <td>
-                
-                    <div class="text_open">
-                        
-                       <p class="text_in">Configuración</p> 
-
-                    <td class="content_cent">
-                        
-                        <button class="button_plus" id="">
-                            <a href="editconfig.html"><i class='plus bx bx-edit'></i>  </a>
-                        </button>
-                    </td>
-
-                    </div>
-                    
-                </td>
-
-                <td>
-                    <button class="button_sync" id="open_modal">
-                        
-                    </button>
-                    
-                
-                </td>
-
-            </tr>
-
-        </table>
-    </div>
-    </div>
-
-    <script>
-        let btn = document.querySelector("#btn");
-        let sidebar = document.querySelector(".sidebar");
+        <a href="ordenes.html"><i class='regreso bx bx-left-arrow-alt'><p class="at">Regresar</p></i></a> 
         
-        btn.onclick = function(){
-            sidebar.classList.toggle("active");
-        }
-    </script>
+        <div class="container">
+            <div class="title">Clientes</div>
+            <div class="content">
+              <form action="#">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Seleccionar Cliente</span>
+                    <select class="select"></select>
+                  </div>
+                <div class="button">
+                  <input type="submit" value="Continuar">
+                </div>
+              </form>
+              <a href="agregarcliente.html" class="link">Agregar Cliente</a>
+            </div>
+            
+        </div>
+
+    </div>
 </body>
 </html>

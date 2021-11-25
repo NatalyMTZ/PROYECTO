@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="IMG/isotipo.png"> 
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/paginas.css">
+    <link rel="stylesheet" href="CSS/tablas.css">
     <title>OrderEat</title>
 </head>
 <body>
@@ -32,31 +33,26 @@
                 
             </li>
             <li>
-                <a href="clientes.html">
-                    <i class='bx bx-user-check'></i>
-                    <span class="links_name">Clientes</span>
-                </a>
-                
-            </li>
-            <li>
                 <a href="platillos.html">
                     <i class='bx bx-restaurant'></i>
                     <span class="links_name">Platillos</span>
                 </a>
                 
             </li>
+
+            <li>
+                <a href="historial.html">
+                    <i class='bx bx-pie-chart-alt'></i>
+                    <span class="links_name">Historial</span>
+                </a>
+                
+            </li>
+
             <li>
                 <a href="reportes.html">
                     <i class='bx bx-receipt'></i>
                     <span class="links_name">Reporte</span>
                 </a>
-                
-            <li>
-                <a href="config.html">
-                    <i class='bx bx-category'></i>
-                    <span class="links_name">Configuración</span>
-                </a>
-                
             </li>
         </ul>
         <div class="profile_content">
@@ -84,21 +80,39 @@
                     
                 </td>
 
-                <td>
-                    <button class="button_sync" id="open_modal">
-                        <i class='sync bx bx-sync'></i>
-                    </button>
-                    
-                
-                </td>
-
             </tr>
 
 
         </table>
         
-        <br><br><br><br><br>
-        <p class="text_ord">AÚN NO HAY PLATILLOS</p>
+        <br><br><br>
+        <div>
+            <center>
+                <table class="content-table">
+                <thead>
+                  <tr>
+                    <th><i class='bx bx-check-square'></i></th>
+                    <th>Platillo</th>
+                    <th>Tiempo</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th><i class='bx bx-edit'></th>
+                    <th><i class='bx bxs-tag-x'></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="radio"></td>
+                    <td>Pollo Adobado</td>
+                    <td>Plato Fuerte</td>
+                    <td>Con salsa roja y verde</td>
+                    <td>$60</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+    </div>
+            </center>
 
     </div>
 

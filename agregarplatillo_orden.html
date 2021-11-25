@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="CSS/paginas.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/agregarp.css">
-    <title>Cliente - OrderEat</title>
+    <title>Agregar Platillo a Orden- OrderEat</title>
 </head>
 <body>
     <div class="sidebar">
@@ -33,70 +33,51 @@
                 
             </li>
             <li>
+                <a href="clientes.html">
+                    <i class='bx bx-user-check'></i>
+                    <span class="links_name">Clientes</span>
+                </a>
+                
+            </li>
+            <li>
                 <a href="platillos.html">
                     <i class='bx bx-restaurant'></i>
                     <span class="links_name">Platillos</span>
                 </a>
                 
             </li>
-
-            <li>
-                <a href="historial.html">
-                    <i class='bx bx-pie-chart-alt'></i>
-                    <span class="links_name">Historial</span>
-                </a>
-                
-            </li>
-
             <li>
                 <a href="reportes.html">
                     <i class='bx bx-receipt'></i>
                     <span class="links_name">Reporte</span>
                 </a>
+                
+            <li>
+                <a href="config.html">
+                    <i class='bx bx-category'></i>
+                    <span class="links_name">Configuración</span>
+                </a>
+                
             </li>
         </ul>
         <div class="profile_content">
-            <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
+            <i class='bx bx-log-out' id="log_out"></i>
         </div>
     </div>
     <div class="home_content">
-        <a href="cliente.html"><i class='regreso bx bx-left-arrow-alt'><p class="at">Regresar</p></i></a> 
+        <a href="agregarorden.html"><i class='regreso bx bx-left-arrow-alt'><p class="at">Regresar</p></i></a> 
         
         <div class="container">
-            <div class="title">Agregar Cliente</div>
+            
             <div class="content">
               <form action="#">
                 <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Platillo</span>
+                        <select class="select"></select>
+                    </div>
                   <div class="input-box">
-                    <span class="details">Nombre</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Número de Celular</span>
-                    <input type="tel" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Estado</span>
-                    <input type="text" placeholder="CDMX" readonly>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Alcaldía</span>
-                    <select class="select"></select>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Colonia</span>
-                    <select class="select"></select>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Calle</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Número Exterior</span>
-                    <input type="number" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Número Interior</span>
+                    <span class="details">Cantidad</span>
                     <input type="number" placeholder="" required>
                   </div>
                 <div class="button">

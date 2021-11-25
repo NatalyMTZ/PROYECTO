@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="IMG/isotipo.png"> 
-    <link rel="stylesheet" href="CSS/paginas.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="stylesheet" href="CSS/paginas.css">
+    <link rel="stylesheet" href="CSS/ccliente.css">
     <link rel="stylesheet" href="CSS/agregarp.css">
-    <title>Editar Negocio - OrderEat</title>
+    <title>OrderEat</title>
 </head>
 <body>
     <div class="sidebar">
@@ -33,69 +33,66 @@
                 
             </li>
             <li>
-                <a href="clientes.html">
-                    <i class='bx bx-user-check'></i>
-                    <span class="links_name">Clientes</span>
-                </a>
-                
-            </li>
-            <li>
                 <a href="platillos.html">
                     <i class='bx bx-restaurant'></i>
                     <span class="links_name">Platillos</span>
                 </a>
                 
             </li>
+
+            <li>
+                <a href="historial.html">
+                    <i class='bx bx-pie-chart-alt'></i>
+                    <span class="links_name">Historial</span>
+                </a>
+                
+            </li>
+
             <li>
                 <a href="reportes.html">
                     <i class='bx bx-receipt'></i>
                     <span class="links_name">Reporte</span>
                 </a>
-                
-            <li>
-                <a href="config.html">
-                    <i class='bx bx-category'></i>
-                    <span class="links_name">Configuración</span>
-                </a>
-                
             </li>
         </ul>
         <div class="profile_content">
-            <i class='bx bx-log-out' id="log_out"></i>
+            <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
         </div>
     </div>
     <div class="home_content">
-        <a href="config.html"><i class='regreso bx bx-left-arrow-alt'><p class="at">Regresar</p></i></a> 
-        
+        <br><br><br>
         <div class="container">
-            <div class="title">Editar Negocio</div>
+            <div class="title">Historial Clientes</div>
             <div class="content">
               <form action="#">
                 <div class="user-details">
-                  <div class="input-box">
-                    <span class="details">Nombre</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Dirección</span>
-                    <input type="text" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Teléfono</span>
-                    <input type="tel" placeholder="" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Seleccionar foto</span>
-                    <input class="btn btn-outline-secondary" type="file" id="file-input">
-                  </div>
-                  
-                <div class="button">
-                  <input type="submit" value="Listo">
-                </div>
+                    <div class="input-box">
+                        <span class="details">Seleccionar Cliente</span>
+                        <select class="select"></select>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Buscar">
+                      </div>
               </form>
             </div>
         </div>
 
     </div>
+
+
+    <!--===== SORTABLE JS =====-->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+     <!--===== MAIN JS =====-->
+    <script src="JS/cardcliente.js"></script>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

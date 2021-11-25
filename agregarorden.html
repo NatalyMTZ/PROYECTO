@@ -13,109 +13,87 @@
     <link rel="stylesheet" href="CSS/paginas.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/agregarp.css">
+    <link rel="stylesheet" href="CSS/tablas.css">
     <title>Agregar Órden - OrderEat</title>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
-                <img src="IMG/isotipo.png" width="35" height="35">
-                <div class="logo_name">OrderEat</div>
-            </div>
-            <i class='bx bx-menu' id="btn"></i>
+  <div class="sidebar">
+    <div class="logo_content">
+        <div class="logo">
+            <img src="IMG/isotipo.png" width="35" height="35">
+            <div class="logo_name">OrderEat</div>
         </div>
-        <ul class="nav_list">
-            <li>
-                <a href="ordenes.html">
-                    <i class='bx bx-dish'></i>
-                    <span class="links_name">Órdenes</span>
-                </a>
-                
-            </li>
-            <li>
-                <a href="clientes.html">
-                    <i class='bx bx-user-check'></i>
-                    <span class="links_name">Clientes</span>
-                </a>
-                
-            </li>
-            <li>
-                <a href="platillos.html">
-                    <i class='bx bx-restaurant'></i>
-                    <span class="links_name">Platillos</span>
-                </a>
-                
-            </li>
-            <li>
-                <a href="reportes.html">
-                    <i class='bx bx-receipt'></i>
-                    <span class="links_name">Reporte</span>
-                </a>
-                
-            <li>
-                <a href="config.html">
-                    <i class='bx bx-category'></i>
-                    <span class="links_name">Configuración</span>
-                </a>
-                
-            </li>
-        </ul>
-        <div class="profile_content">
-            <i class='bx bx-log-out' id="log_out"></i>
-        </div>
+        <i class='bx bx-menu' id="btn"></i>
     </div>
+    <ul class="nav_list">
+        <li>
+            <a href="ordenes.html">
+                <i class='bx bx-dish'></i>
+                <span class="links_name">Órdenes</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="platillos.html">
+                <i class='bx bx-restaurant'></i>
+                <span class="links_name">Platillos</span>
+            </a>
+            
+        </li>
+
+        <li>
+            <a href="historial.html">
+                <i class='bx bx-pie-chart-alt'></i>
+                <span class="links_name">Historial</span>
+            </a>
+            
+        </li>
+
+        <li>
+            <a href="reportes.html">
+                <i class='bx bx-receipt'></i>
+                <span class="links_name">Reporte</span>
+            </a>
+        </li>
+    </ul>
+    <div class="profile_content">
+        <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
+    </div>
+</div>
     <div class="home_content">
         <a href="ordenes.html"><i class='regreso bx bx-left-arrow-alt'><p class="at">Regresar</p></i></a> 
     
 
         <div class="container">
-            <div class="title">Agregar Orden</div>
+            <div class="title">Orden</div>
             <div class="content">
               <form action="#">
                 <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Cliente</span>
-                        <input type="search" placeholder="Buscar" required id="bcliente">
-                    </div>
-                  <div class="input-box">
-                    <span class="details">Dirección</span>
-                    <input type="text" placeholder="" readonly>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Platillos</span>
-                    <input type="search" placeholder="Buscar" required>
-                  </div>
                   <div>
-                    <table class="content-table">
+                    <a href="agregarplatillo_orden.html" class="mas"><i class='bx bx-plus'></i>Platillo </a>
+                    <center>
+                      <table class="content-table">
                         <thead>
                           <tr>
-                            <th>Rank</th>
-                            <th>Name</th>
-                            <th>Points</th>
-                            <th>Team</th>
+                            <th><i class='bx bx-check-square'></i></th>
+                            <th>Cantidad</th>
+                            <th>Platillo</th>
+                            <th>Precio</th>
+                            <th><i class='bx bx-edit'></i></th>
+                            <th><i class='bx bxs-tag-x'></i></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
+                            <td><input type="radio"></td>
                             <td>1</td>
-                            <td>Domenic</td>
-                            <td>88,110</td>
-                            <td>dcode</td>
-                          </tr>
-                          <tr class="active-row">
-                            <td>2</td>
-                            <td>Sally</td>
-                            <td>72,400</td>
-                            <td>Students</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Nick</td>
-                            <td>52,300</td>
-                            <td>dcode</td>
+                            <td>Pollo Adobado</td>
+                            <td>$700</td>
                           </tr>
                         </tbody>
                       </table>
+                    </center>
+                    
                   </div>
                   <div class="input-box">
                     <span class="details">Comentarios</span>
@@ -123,7 +101,7 @@
                   </div>
                 </div>
                 <div class="button">
-                  <input type="submit" value="Register">
+                  <input type="submit" value="Agregar Orden">
                 </div>
               </form>
             </div>

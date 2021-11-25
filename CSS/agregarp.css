@@ -67,7 +67,7 @@ form .input-box span.details{
   transition: all 0.3s ease;
 }
 .user-details .input-box input:focus,
-.user-details .input-box input:valid{
+.user-details .input-box input:valid .select{
   border-color: #FFDE59;
 }
  form .gender-details .gender-title{
@@ -110,7 +110,7 @@ form .input-box span.details{
 
  
  form .button input{
-    display: block;
+  display: block;
    height: 100%;
    width: 640px;
    border-radius: 5px;
@@ -130,47 +130,34 @@ form .input-box span.details{
    border: none;
 }
 
-.content-table {
-    border-collapse: collapse;
-    margin: 20px 0;
-    margin-left: 120px;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+.mas{
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  margin-left: 550px;
 }
-  
-.content-table thead tr {
-    background-color: #FFDE59;
-    color: black;
-    text-align: left;
-}
-  
-.content-table th,
-.content-table td {
-    padding: 12px 15px;
-}
-  
-.content-table tbody tr {
-    border-bottom: 1px solid #f3f3f3;
-}
-  
-  .content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-  
-  .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #FFDE59;
-}
-  
-.content-table tbody tr.active-row {
-    font-weight: bold;
-    color: #FFDE59;
-}
-  
 
+.link{
+  color: black;
+  display: block;
+  margin-left: 520px;
+  font-size: 16px;
+}
 
+.select{
+  width: 300px;
+  height: 45px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 17px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
  
  form .button input:hover{
   /* transform: scale(0.99); */
